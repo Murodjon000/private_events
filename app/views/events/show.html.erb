@@ -1,5 +1,21 @@
 <h1>Events</h1>
 
-<h2><%= @event.name %> </h2> 
-
-<h2><%= @event.creator.name %></h2>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <div class="card border text-center px-3">
+      <div class="card-header">
+        <h1> <%= @event.name %></h1>
+        <hr>
+      </div>
+      <div class="card-body">
+        <p class="card-text"><%= @event.description %> </p>
+        <%= link_to 'Invite member','#', class:"btn btn-primary btn-lg" %>
+        <h5 class="text-right mr-2"> by <%= @event.creator.name %> </h5>
+        <hr>
+      </div>
+      <div class="card-footer text-muted">
+      <p class='text-center'> date <%= @event.date %></p>
+      </div>
+    </div>
+  </div>
+</div>
