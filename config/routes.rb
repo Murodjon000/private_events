@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'events/new'
+  get 'events/show'
   root 'users#new'
 
   get '/signup', to: 'users#new'
