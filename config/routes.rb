@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  get 'events/new'
-  get 'events/show'
+  
   root 'users#new'
 
   get '/signup', to: 'users#new'
@@ -9,5 +8,5 @@ Rails.application.routes.draw do
 
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
-  # resources :events
+  resources :events
 end
