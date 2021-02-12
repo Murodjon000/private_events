@@ -1,5 +1,4 @@
 class EventsController < ApplicationController
-
   before_action :logged_in, except: [:index] 
 
   def index
