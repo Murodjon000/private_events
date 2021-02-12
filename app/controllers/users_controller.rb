@@ -1,5 +1,8 @@
 class UsersController < ApplicationController
+<<<<<<< HEAD
   before_action :logged_in
+=======
+>>>>>>> e81048bcc2b7ce2094d0869f732343ea715a3dfe
   def index
     @users = User.all
   end
