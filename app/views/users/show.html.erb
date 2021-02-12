@@ -1,9 +1,21 @@
-<div class="row">
+<%# <div class="row">
     <aside class="col-md-4">
         <section class="user_info">
         <h1>
-            <%= @user.name %>
+ 
         </h1>
         </section>
     </aside>
-</div>
+</div> %>
+<ul>
+<h1><%= @user.name %></h1>
+<% if @user.events.empty? %>
+<p>User is not hosting</p>
+<% else %>
+<span class="mb-3 text-black">Events</span>
+        <% @user.events.each do |event| %>
+            <li class=""><%=link_to event.name, event_path(event) %></li>
+            <hr>
+        <% end %>
+<% end %>
+</ul>
