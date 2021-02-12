@@ -4,9 +4,11 @@ module SessionsHelper
   end
 
   def current_user
+    # rubocop:disable Style/GuardClause
     if session[:user_id]
-        @current_user ||= User.find_by(id: session[:user_id])
+      @current_user ||= User.find_by(id: session[:user_id])
     end
+    # rubocop:enable Style/GuardClause
   end
 
   def logged_in?
