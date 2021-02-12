@@ -40,6 +40,7 @@ We  built a site similar to a private Eventbrite which allows users to create ev
 - Commit your changes `git commit -m 'New feature'`
 - Push it `git push -u origin new-feature`
 - Open a pull request using this branch
+- Feel free to check the [issues page](https://github.com/Murodjon000/private_events/issues).
 
 ## License
 
