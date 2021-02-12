@@ -1,0 +1,43 @@
+
+  <div class="d-flex">
+   <h1>Coming Events</h1>
+  <% @events.upcoming.each do |event| %>
+  <div class="card border text-center px-3 mb-3">
+      <div class="card-header">
+        <h1> <%= event.name %></h1>
+        <hr>
+      </div>
+      <div class="card-body">
+        <p class="card-text"><%= event.description %> </p>
+        <h5 class="text-right mr-2"> by <%= event.creator.name %> </h5>
+        <hr>
+      </div>
+      <div class="card-footer text-muted">
+      <p class='text-center'> date <%= event.date %></p>
+    </div>
+  </div>
+  <% end %>
+
+   <div class="d-flex">
+   <h1>Past Events</h1>
+    <% @events.past.each do |event| %>
+      <div class="card border text-center px-3">
+        <div class="card-header">
+          <h1> <%= event.name %></h1>
+          <hr>
+        </div>
+        <div class="card-body">
+          <p class="card-text"><%= event.description %> </p>
+          <h5 class="text-right mr-2"> by <%= event.creator.name %> </h5>
+          <hr>
+        </div>
+        <div class="card-footer text-muted">
+          <p class='text-center'> date <%= event.date %></p>
+        </div>
+        
+    <% end %>
+    </div>
+
+
+
+
