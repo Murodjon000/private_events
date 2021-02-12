@@ -7,7 +7,7 @@
       <ul class="dropdown-menu">
       <% User.find(@event.enrollments.invited.map { |en_user| en_user.user_id }).each do |user| %>
         <li>
-          <%= user.name %>
+          <%= link_to user.name, users_path %>
         </li>
       <% end %>
       </ul>
