@@ -5,9 +5,11 @@ module SessionsHelper
 
   def current_user
     # rubocop:disable Style/GuardClause
+    # rubocop:disable Style/IfUnlessModifier
     if session[:user_id]
       @current_user ||= User.find_by(id: session[:user_id])
     end
+    # rubocop:enable Style/IfUnlessModifier
     # rubocop:enable Style/GuardClause
   end
 
@@ -16,7 +18,7 @@ module SessionsHelper
   end
 
   def log_out
-      session.delete(:user_id)
-      @current_user = nil
+    session.delete(:user_id)
+    @current_user = nil
   end
 end
