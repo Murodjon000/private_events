@@ -29,7 +29,7 @@ We  built a site similar to a private Eventbrite which allows users to create ev
 👤 **Abigael Nyangasi**
 - Github: [@IjayAbby](https://github.com/IjayAbby)
 - Twitter: [@Ijay_js](https://twitter.com/Ijay_js)
-- Linkedin: [linkedin Abigael Nyangasi](https://www.linkedin.com/in/ijayabby4/)
+- Linkedin: [Abigael Nyangasi](https://www.linkedin.com/in/ijayabby4/)
 
 ## Contributing
 
@@ -41,4 +41,4 @@ We  built a site similar to a private Eventbrite which allows users to create ev
 
 ## License
 
-[MIT](https://github.com/Murodjon000/newsweek-clone/blob/master/LICENSE) licensed software.
+[MIT](https://github.com/Murodjon000/private_events/blob/events/LICENSE) licensed software.
