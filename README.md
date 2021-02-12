@@ -10,10 +10,11 @@ We  built a site similar to a private Eventbrite which allows users to create ev
 
 ## Built with
 
-- Rails
-- Bootstrap
-- Html
+- Rails - version  6.0.2.1
+- Bootstrap - version 5.0
 - Sass
+- PostgreSQL  - version 20.04
+- VSCode - code editor
 
 ## Installing
 
