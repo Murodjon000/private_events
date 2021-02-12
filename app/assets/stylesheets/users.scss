@@ -8,28 +8,18 @@
 }
 
 $gray-light:#777;
-/* universal */
+
 body {
   padding-top: 60px;
 }
 
-section{
+section {
   overflow: auto;
 }
 
 textarea {
   resize: vertical;
 }
-
-.center {
-  text-align: center;
-
-  h1 {
-    margin-bottom: 10px;
-  }
-}
-
-/* typography */
 
 h1,
 h2,
@@ -47,6 +37,14 @@ h1 {
   text-align: center;
 }
 
+.center {
+    text-align: center;
+  
+    h1 {
+      margin-bottom: 10px;
+    }
+}
+
 h2 {
   font-size: 1.2em;
   letter-spacing: -1px;
@@ -61,8 +59,6 @@ p  {
   line-height: 1.7em;
 }
 
-
-/* header */
 #logo {
   float: left;
   margin-right: 10px;
