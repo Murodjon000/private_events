@@ -4,6 +4,10 @@
 
 We  built a site similar to a private Eventbrite which allows users to create events and then manage user signups. Users can create events and send invitations and parties (sound familiar?). Events take place at a specific date and at a location (which you can just store as a string, like “Ijay’s House”).
 
+### Project Screenshot.
+
+![screenshot-127-0-0-1-3000-1613134894367](https://user-images.githubusercontent.com/43843720/107771803-5ec76500-6d4c-11eb-85e4-08e4426cd6f1.png)
+
 ## Built with
 
 - Rails
