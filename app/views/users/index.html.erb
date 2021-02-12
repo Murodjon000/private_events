@@ -1,0 +1,22 @@
+<div class="card" style="width: 18rem;">
+  <div class="card-header">
+    Users
+  </div>
+  <% @users.each do |user| %>
+  <% enrollment = Enrollment.find_by(event_id: params[:event_id], user_id: user.id) %>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">
+    <%= user.name %>
+    <% unless enrollment.nil? || enrollment.status.nil? %>
+      <span><%= enrollment.status %></span>
+    <% end %>
+
+    <% if enrollment.nil? %>
+       <%= button_to "Invite", enrollments_path(event_id: params[:event_id], user_id: user.id), class: "btn btn-primary" %>
+    <% else %>
+      <%= button_to "Cancel", enrollment_path(id: enrollment.id, event_id: params[:event_id]), method: :delete, class: "btn btn-primary" %>
+    <% end %>
+    </li>
+  </ul>
+  <% end %>
+</div>
