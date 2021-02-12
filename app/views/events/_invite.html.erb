@@ -1,0 +1,10 @@
+<% if @event.creator == current_user %>
+    <%= button_to  'Invite member', users_path, params: { :event_id => @event.id }, method: :get, class:"btn btn-primary btn-lg" %>
+<% else %>
+    <% enrollment = Enrollment.find(event_id: @event.id, user_id: current_user.id) %>
+    <% if  enrollment && enrollment.accepted?  %>
+       <%= button_to  'Cancel', enrollment_path(id: enrollment.id, event_id: @event.id, user_id: current_user.id), method: :delete, class:"btn btn-danger btn-lg" %>
+    <% else %>
+       <%= button_to  'Enroll', enrollment_path(event_id: @event.id), method: :patch, class:"btn btn-danger btn-lg" %>
+    <% end %>
+<% end %>
