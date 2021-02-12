@@ -1,6 +1,5 @@
 class ApplicationController < ActionController::Base
-    
-    private
+  private
 
     def logged_in
         unless current_user
