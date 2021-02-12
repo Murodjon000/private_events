@@ -53,7 +53,7 @@ Finally, if you've read this far, don't forget to give this repo a ⭐️. They'
 ## Acknowledgments
 
 - Official [Rails guides](https://guides.rubyonrails.org/index.html). 
-- The [Odin Project](https://www.theodinproject.com/courses/ruby-on-rails/lessons/forms#project-bare-metal-forms-and-helpers).
+- The [Odin Project](https://www.theodinproject.com/courses/ruby-on-rails/lessons/associations).
 - [Microverse](https://www.microverse.org/).
 
 ## License
