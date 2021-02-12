@@ -1,8 +1,8 @@
 class EventsController < ApplicationController
-  before_action :logged_in, except: [:index] 
+  before_action :logged_in, except: [:index]
 
   def index
-    @events = Event.all.order("date DESC")
+    @events = Event.all.order('date DESC')
   end
 
   def new
@@ -10,21 +10,21 @@ class EventsController < ApplicationController
   end
 
   def create
-    @event = current_user.events.build(event_params)    
+    @event = current_user.events.build(event_params) 
     if @event.save
       flash[:success] = "Event '#{@event.name}' successfuly created."
       redirect_to @event
     else
-      flash[:alert] = "Error happened."
+      flash[:alert] = 'Error happened.'
       render :new
     end
-  end 
+  end
 
   def show
     @event = Event.find(params[:id])
-  end  
+  end
 
-  private 
+  private
 
   def event_params
     params.require(:event).permit(:name, :description, :date, :location, :user_id)
