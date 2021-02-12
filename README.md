@@ -50,6 +50,12 @@ We  built a site similar to a private Eventbrite which allows users to create ev
 
 Finally, if you've read this far, don't forget to give this repo a ⭐️. They're free . . . I think.
 
+## Acknowledgments
+
+- Official [Rails guides](https://guides.rubyonrails.org/index.html). 
+- The [Odin Project](https://www.theodinproject.com/courses/ruby-on-rails/lessons/forms#project-bare-metal-forms-and-helpers).
+- [Microverse](https://www.microverse.org/).
+
 ## License
 
 [MIT](https://github.com/Murodjon000/private_events/blob/events/LICENSE) licensed software.
