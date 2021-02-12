@@ -46,6 +46,10 @@ We  built a site similar to a private Eventbrite which allows users to create ev
 - Open a pull request using this branch
 - Feel free to check the [issues page](https://github.com/Murodjon000/private_events/issues).
 
+## Show your support
+
+Finally, if you've read this far, don't forget to give this repo a ⭐️. They're free . . . I think.
+
 ## License
 
 [MIT](https://github.com/Murodjon000/private_events/blob/events/LICENSE) licensed software.
