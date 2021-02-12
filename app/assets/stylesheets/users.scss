@@ -39,7 +39,7 @@ h1 {
 
 .center {
   text-align: center;
-  
+
   h1 {
     margin-bottom: 10px;
   }
@@ -102,7 +102,6 @@ input {
 
 .field_with_errors {
   @extend .has-error;
-  
   .form-control {
     color: $state-danger-text;
   }
