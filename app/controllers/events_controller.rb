@@ -1,5 +1,5 @@
 class EventsController < ApplicationController
-  before_action :logged_in, except: [:index]
+  before_action :logged_in, except: [ :index ] 
 
   def index
     @events = Event.all.order('date DESC')
