@@ -238,7 +238,7 @@ DEPENDENCIES
   pg (>= 0.18, < 2.0)
   puma (~> 4.1)
   rails (~> 6.0.2, >= 6.0.2.1)
-  rubocop (~> 0.81.0)
+  rubocop
   sass-rails (>= 6)
   spring
   spring-watcher-listen (~> 2.0.0)

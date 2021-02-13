@@ -14,7 +14,7 @@
     <% if enrollment.nil? %>
        <%= button_to "Invite", enrollments_path(event_id: params[:event_id], user_id: user.id), class: "btn btn-primary" %>
     <% else %>
-      <%= button_to "Cancel", enrollment_path(id: enrollment.id, event_id: params[:event_id]), method: :delete, class: "btn btn-primary" %>
+      <%= button_to "Cancel", enrollment_path(id: enrollment.id, event_id: params[:event_id]), method: :delete, class: "btn btn-danger" %>
     <% end %>
     </li>
   </ul>

@@ -14,14 +14,14 @@
         </div>
         <div class="card-footer text-muted">
         <p class='text-center'> date <%= event.date %></p>
-      </div>
-    </div>
+     </div>
+  </div>
   <% end %>
 
    <div class="d-flex">
    <h1>Past Events</h1>
     <% @past_events.each do |event| %>
-      <div class="card border text-center px-3">
+      <div class="card border text-center px-3  mb-3">
         <div class="card-header">
           <h1> <%= event.name %></h1>
           <hr>
@@ -34,9 +34,8 @@
         <div class="card-footer text-muted">
           <p class='text-center'> date <%= event.date %></p>
         </div>
-        
-    <% end %>
     </div>
+  <% end %>
 
 
 
