@@ -1,7 +1,7 @@
 
   <div class="d-flex">
    <h1>Coming Events</h1>
-  <% @events.upcoming.each do |event| %>
+  <% @upcoming_events.each do |event| %>
     <div class="card border text-center px-3 mb-3">
         <div class="card-header">
           <h1> <%= event.name %></h1>
@@ -20,7 +20,7 @@
 
    <div class="d-flex">
    <h1>Past Events</h1>
-    <% @events.past.each do |event| %>
+    <% @past_events.each do |event| %>
       <div class="card border text-center px-3">
         <div class="card-header">
           <h1> <%= event.name %></h1>
