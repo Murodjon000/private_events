@@ -8,9 +8,8 @@ RSpec.describe User, type: :model do
 
     it { is_expected.to have_many(:attended_events).through(:enrollments).source(:event) }
   end
-  
+
   describe 'validations' do
     it { is_expected.to validate_presence_of(:name) }
   end
-
 end
