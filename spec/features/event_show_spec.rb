@@ -1,9 +1,11 @@
 require 'rails_helper'
 
 RSpec.describe 'Eventshow', type: :feature do
+  # rubocop disable:all Lint/ParenthesesAsGroupedExpression
   let (:event) { create(:event) }
   let (:user) { create(:attendee) }
   let (:enrollment) { create(:enrollment, user: user, event: event) }
+  # rubocop enable:all Lint/ParenthesesAsGroupedExpression
 
   before do
     feature_sign_in(user)
