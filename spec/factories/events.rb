@@ -4,7 +4,7 @@ FactoryBot.define do
     name { 'hello world' }
     date { Time.zone.now }
     description { 'hello world description' }
-  
+
     trait :past do
       date { Time.zone.now - 70.hours }
     end
