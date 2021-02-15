@@ -1,9 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe 'Eventnew', type: :feature do
-  # rubocop disable:all Lint/ParenthesesAsGroupedExpression   
-  let (:user) { create(:user) }
-  # rubocop enable:all Lint/ParenthesesAsGroupedExpression
+  let(:user) { create(:user) }
+
   before do
     feature_sign_in(user)
     visit new_event_path
