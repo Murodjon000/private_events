@@ -1,14 +1,14 @@
 require 'rails_helper'
 
 RSpec.describe Event, type: :model do
-    subject(:event) { build(:event) }
+  subject(:event) { build(:event) }
 
   describe 'associations' do
     it { is_expected.to belong_to(:creator).class_name('User') }
 
     it { is_expected.to have_many(:attendees).through(:enrollments).source(:user) }
   end
-  
+
   describe 'validations' do
     it { is_expected.to validate_presence_of(:name) }
 
@@ -28,9 +28,8 @@ RSpec.describe Event, type: :model do
     it 'should list all upcoming events' do
       upcoming_event = create(:event, :upcoming)
       create(:event, :past)
-      
+
       expect(Event.upcoming.map(&:id)).to match_array([upcoming_event.id])
     end
   end
-
 end
